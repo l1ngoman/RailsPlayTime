@@ -1,6 +1,10 @@
 class GameController < ApplicationController
+  def game
+    cookies[:secret] = rand(100)+1
+  end
+
   def try
-    cookies[:guess] = params[:guess] unless params[:guess].nil?
+    @guess = params[:guess]
     render 'try.html.erb'
   end
 end

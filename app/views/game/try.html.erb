@@ -1,2 +1,5 @@
-Hello. I'm trying.
-Secret number: <%= cookies[:guess] %>
+<h1>Do you want to play a game?</h1>
+<h2>Try to guess the secret number by typing it in the URL bar.</h2>
+<hr>
+<p>Your guess was: <%= @guess %></p>
+<p>The secret number is: <%= cookies[:secret] %></p>
