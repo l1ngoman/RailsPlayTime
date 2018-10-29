@@ -5,6 +5,8 @@ class GameController < ApplicationController
 
   def try
     @guess = params[:guess]
+
+    if :guess 
     render 'try.html.erb'
   end
 end
