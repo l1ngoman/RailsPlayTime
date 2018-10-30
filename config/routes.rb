@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/try' => 'game#try'
   get '/kill' => 'game#kill'
   get '/validate' => 'game#validate'
-  get '/game' => 'game#reset'
+  get '/reset' => 'game#reset'
 
 end

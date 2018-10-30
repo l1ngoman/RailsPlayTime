@@ -5,7 +5,6 @@ class GameController < ApplicationController
   end
 
   def try
-    @name = params[:name]
     @guess = params[:guess].to_i
     if @guess == nil
       game()
@@ -34,11 +33,19 @@ class GameController < ApplicationController
   end
 
   def reset
+    cookies[:secret] = rand(100)+1
+    cookies[:count] = 0
     try()
   end
   def kill
+    cookies[:name] = params[:name]
   end
   def validate
     cookies[:name] = params[:name]
+  end
+  def get_name
+    cookies[:name] = params[:name]
+    cookies[:secret] = rand(100)+1
+    cookies[:count] = 0
   end
 end

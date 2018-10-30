@@ -1,6 +1,6 @@
 <div class="big">
   <main class="text">
-    <h2>OK, <%= @name %>, try to guess the secret number, or else you die!!</h2>
+    <h2>OK, <%= cookies[:name] %>, try to guess the secret number, or else you die!!</h2>
     <h3>Paste this link in your browser followed by your guess:</h3>
     <br />
     <form>
@@ -10,5 +10,8 @@
     <p>Your guess of <%= @guess %> was <%= @feedback %></p>
     <p>Guess number: <%= cookies[:count] %></p>
     <p>The secret number is: <%= cookies[:secret] %></p>
+    <form action="reset" method="get">
+      <input type="submit" value="RESET" />
+    </form>
   </main>
 </div>
