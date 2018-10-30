@@ -1,8 +1,14 @@
-<h1>Do you want to play a game?</h1>
-<h2>Try to guess the secret number.</h2>
-<h3>Paste this link in your browser followed by your guess:</h3>
-<h3>localhost:3000/game?guess=</h3>
-<hr>
-<p>Your guess was: <%= @guess %></p>
-<p>Your guess was <%= @feedback %></p>
-<p>The secret number is: <%= cookies[:secret] %></p>
+<div class="big">
+  <main class="text">
+    <h2>OK, <%= @name %>, try to guess the secret number, or else you die!!</h2>
+    <h3>Paste this link in your browser followed by your guess:</h3>
+    <br />
+    <form>
+      <input type="number" name="guess" placeholder="Enter your guess" />
+      <input type="submit" value="GUESS" />
+    </form>
+    <p>Your guess of <%= @guess %> was <%= @feedback %></p>
+    <p>Guess number: <%= cookies[:count] %></p>
+    <p>The secret number is: <%= cookies[:secret] %></p>
+  </main>
+</div>

@@ -1,0 +1,45 @@
+.big {
+  background: url(bkgd.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 300px;
+  display: flex;
+}
+.text {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 150px;
+  max-height: 400px;
+}
+.text2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 150px;
+  max-height: 60px;
+}
+.text3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 150px;
+  height: 90px;
+}
+.text4 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 150px;
+  height: 190px;
+}
+
+input {
+  background-color: black;
+  color: white;
+}
+label {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
